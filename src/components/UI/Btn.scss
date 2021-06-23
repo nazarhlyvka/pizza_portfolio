@@ -1,0 +1,18 @@
+.btn {
+  padding: 8px 20px;
+  background: #1F2937;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover{
+  background: #4B5563;
+}
+
+.btn_disable {
+  cursor: not-allowed;
+}
+.btn_disable:hover {
+  background: #1F2937;
+}

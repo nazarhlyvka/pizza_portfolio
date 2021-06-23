@@ -1,0 +1,41 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+.carousel_box {
+  padding-bottom: 40px;
+}
+
+div {
+  .slick-dots {
+    li {
+      button:before {
+        color:white;
+      }
+    }
+    .slick-active {
+      button:before {
+        color:white;
+      }
+    }
+  }
+}
+
+.carousel_img {
+  width: 100%;
+  min-width: 250px;
+  max-width: 1200px;
+  object-fit: cover;
+}
+
+.slick-slider {
+  .slick-list {
+    .slick-track {
+      .slick-slide {
+        div {
+          display: flex !important;
+          justify-content: center !important;
+        }
+      }
+    }
+  }
+}

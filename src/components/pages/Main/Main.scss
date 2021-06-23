@@ -1,0 +1,20 @@
+.main_info {
+  display: flex;
+  justify-content: space-between;
+  div {
+    text-align: center;
+    flex-basis: 20%;
+    .info_img_wr {
+      height:100px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .main_info {
+    flex-direction: column;
+    div{
+      margin-bottom: 20px;
+    }
+  }
+}

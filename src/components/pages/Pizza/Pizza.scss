@@ -1,0 +1,50 @@
+.pizza_list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 40px;
+  .pizza_item {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background: #6B7280;
+    .pizza_item_name {
+      text-align: center;
+    }
+    .pizza_item_img {
+      width: 100%;
+      min-width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .ingr{
+      min-height: 60px;
+    }
+    .weight_box {
+      display: flex;
+      justify-content: space-between;
+    }
+    .price_to-cart{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .pizza_list {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .pizza_list {
+    grid-template-columns: auto;
+    .pizza_item {
+      .ingr {
+        min-height: 40px;
+      }
+    }
+  }
+}

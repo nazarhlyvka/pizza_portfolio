@@ -1,0 +1,60 @@
+.form {
+  width: 80%;
+  max-width: 550px;
+  margin: 0 auto ;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  padding: 40px;
+  background: rgba($color: 	#4B5563, $alpha: 1);
+  transform: translate(0px, 100px);
+  text-align: center;
+  border-radius: 10px;
+  .btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    background: #1F2937;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background: #374151;
+    }
+  }
+  .btn_dis {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    background: #6B7280;
+    cursor: not-allowed;
+  }
+}
+
+.phone, .name {
+  border: none;
+  border-bottom: 2px solid #10B981;
+  font-size: 16px;
+}
+.phone::placeholder, .name::placeholder {
+  color: white;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: #240370;
+}
+.invalid input {
+  border-bottom: 2px solid #F87171;
+}
+
+input {
+  background: inherit;
+  color: white;
+  transition: 0.3s;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 700px;
+}

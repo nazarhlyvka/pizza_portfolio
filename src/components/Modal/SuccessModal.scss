@@ -1,0 +1,42 @@
+.success_modal {
+  padding: 20px;
+  background: rgba($color: 	#4B5563, $alpha: 1);
+  position: relative;
+  z-index: 10;
+  width: 80%;
+  max-width: 550px;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+  transform: translate(0px, 100px);
+  p {
+    margin-bottom: 20px;
+  }
+  .btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    background: #1F2937;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background: #374151;
+    }
+  }
+}
+
+.effect {
+  animation: openSuccess 0.5s ease-out;
+}
+
+@keyframes openSuccess {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(85%);
+  }
+}
