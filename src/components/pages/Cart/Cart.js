@@ -5,7 +5,7 @@ import CartItem from './CartItem'
 import Form from '../../Modal/Form'
 import SuccessModal from '../../Modal/SuccessModal'
 import './Cart.scss'
-import { openOrderForm } from '../../../store/Order'
+import { openOrderForm } from '../../../store/reducers/Order'
 
 const Cart = () => {
   const {cart} = useSelector(state => state.cart)

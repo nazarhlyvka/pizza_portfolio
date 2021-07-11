@@ -1,9 +1,9 @@
 import React, { useCallback } from 'react'
 import Btn from '../../UI/Btn'
 import { useDispatch } from 'react-redux';
-import { lessPizza, morePizza, removePizza } from '../../../store/Pizza';
-import { lessDrinks, moreDrinks, removeDrinks } from '../../../store/Drinks';
-import { lessPromo, morePromo, removePromo } from '../../../store/Promo';
+import { lessPizza, morePizza, removePizza } from '../../../store/reducers/Pizza';
+import { lessDrinks, moreDrinks, removeDrinks } from '../../../store/reducers/Drinks';
+import { lessPromo, morePromo, removePromo } from '../../../store/reducers/Promo';
 
 const CartItem = ({detail}) => {
   const dispatch = useDispatch()

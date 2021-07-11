@@ -1,8 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import { closeOutModal, closeSuccessModal } from '../../store/Modal'
-import { closeOrderSuccess } from '../../store/Order'
+import { closeOutModal, closeSuccessModal } from '../../store/reducers/Modal'
+import { closeOrderSuccess } from '../../store/reducers/Order'
 import './SuccessModal.scss'
 
 const SuccessModal = () => {

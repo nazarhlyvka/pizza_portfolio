@@ -6,7 +6,7 @@ import IconButton from '@material-ui/core/IconButton';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import PinterestIcon from '@material-ui/icons/Pinterest';
-import payment from '../../img/pngegg.png'
+import payment from '../../assets/pngegg.png'
 import './Footer.scss'
 
 const Footer = () => {

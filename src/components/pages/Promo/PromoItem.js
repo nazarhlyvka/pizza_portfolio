@@ -4,7 +4,7 @@ import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import {Link} from 'react-router-dom'
 import { useDispatch } from 'react-redux';
-import {addPromoToCart} from '../../../store/Promo'
+import {addPromoToCart} from '../../../store/reducers/Promo'
 
 const PromoItem = ({detail}) => {
   const dispatch = useDispatch()

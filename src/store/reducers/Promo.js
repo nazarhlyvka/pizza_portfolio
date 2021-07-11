@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import promoDB from "./DB/PromoDb";
+import promoDB from "../DB/PromoDb";
 
 const promoSlice = createSlice({
   name: "promo",

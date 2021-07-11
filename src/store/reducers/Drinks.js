@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import drinksDB from './DB/DrinksDB'
+import drinksDB from '../DB/DrinksDB'
 
 const drinksSlice = createSlice({
   name: 'drinks',

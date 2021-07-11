@@ -1,11 +1,11 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import useInput from "../../hooks/useInput";
-import { refreshDrinks } from "../../store/Drinks";
-import { closeCallBackModal, openSuccessModal } from "../../store/Modal";
-import { closeOrderForm, openOrderSuccess } from "../../store/Order";
-import { refreshPizza } from "../../store/Pizza";
-import { refreshPromo } from "../../store/Promo";
+import { refreshDrinks } from "../../store/reducers/Drinks";
+import { closeCallBackModal, openSuccessModal } from "../../store/reducers/Modal";
+import { closeOrderForm, openOrderSuccess } from "../../store/reducers/Order";
+import { refreshPizza } from "../../store/reducers/Pizza";
+import { refreshPromo } from "../../store/reducers/Promo";
 import "./Form.scss";
 
 const Form = ({btnName, makeOrder, order}) => {
@@ -32,7 +32,7 @@ const Form = ({btnName, makeOrder, order}) => {
     inputValid: phoneValid,
     inputInvalid: phoneInvalid,
     reset: resetPhone,
-  } = useInput((value) => value.includes("3" && "8"));
+  } = useInput((value) => /[3][8][0][0-9]{9}/.test(value));
 
   let formValid = false;
 

@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { useDispatch } from "react-redux";
-import { closeCallBackModal, closeOutModal, closeSuccessModal } from "../../store/Modal";
+import { closeCallBackModal, closeOutModal, closeSuccessModal } from "../../store/reducers/Modal";
 import "./OutModal.scss";
 
 const OutModal = () => {

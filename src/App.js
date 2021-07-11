@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import Header from "./components/Header/Header";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Loading from "./components/UI/Loading";
 import Footer from "./components/Footer/Footer";
 
@@ -32,6 +32,9 @@ const App = () => {
           </Route>
           <Route path='/promo' exact>
             <Promo/>
+          </Route>
+          <Route path='*'>
+            <Redirect to='/'/>
           </Route>
         </Switch>
         <CallBackModal/>

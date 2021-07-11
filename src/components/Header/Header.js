@@ -9,8 +9,8 @@ import CartBtn from './CartBtn';
 
 import './Header.scss'
 import { useDispatch, useSelector } from 'react-redux';
-import { openCallBackModal, openOutModal } from '../../store/Modal';
-import { addToCart } from '../../store/Cart';
+import { openCallBackModal, openOutModal } from '../../store/reducers/Modal';
+import { addToCart } from '../../store/reducers/Cart';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false)
@@ -23,7 +23,7 @@ const Header = () => {
   useEffect(() => {
     dispatch(addToCart([...pizza, ...drinks, ...promo]))
   }, [dispatch, pizza, drinks, promo])
-  
+
   const openCallBack = () => {
     dispatch(openOutModal())
     dispatch(openCallBackModal())
